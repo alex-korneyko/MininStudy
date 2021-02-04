@@ -1,1 +1,26 @@
-<p>part4-directives works!</p>
+<div>
+  <h3>Angular directives</h3>
+
+  <p appStyle="red" [dComplexStyle]="{border: '2px solid dimgray', borderRadius: '3px'}">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, nostrum!
+  </p>
+
+  <button class="btn color-blue"
+          (click)="isVisible = !isVisible"
+  >Toggle</button>
+
+<!--  <div class="wrap"-->
+<!--       *ngIf="isVisible">-->
+<!--    <p>-->
+<!--      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consectetur consequatur deleniti eaque earum itaque nihil perspiciatis quisquam quo vero.-->
+<!--    </p>-->
+<!--  </div>-->
+
+  <div class="wrap"
+       *appIfNot="!isVisible">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consectetur consequatur deleniti eaque earum itaque nihil perspiciatis quisquam quo vero.
+    </p>
+  </div>
+
+</div>

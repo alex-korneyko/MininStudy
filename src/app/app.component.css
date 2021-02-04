@@ -2,13 +2,14 @@
   width: 250px;
   height: 100vh;
   display: inline-block;
+  padding: 0 .5rem;
 }
 
 .main-panel {
   flex: 1;
   height: 100vh;
   display: inline-block;
-
+  padding: 0 .5rem;
 }
 
 .panels-divider {
@@ -19,4 +20,9 @@
   border-left: 1px solid dimgray;
   border-right: 1px solid dimgray;
   cursor: col-resize;
+}
+
+.link {
+  margin: 5px;
+  display: block;
 }
