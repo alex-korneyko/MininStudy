@@ -1,0 +1,22 @@
+.left-panel {
+  width: 250px;
+  height: 100vh;
+  display: inline-block;
+}
+
+.main-panel {
+  flex: 1;
+  height: 100vh;
+  display: inline-block;
+
+}
+
+.panels-divider {
+  width: 2px;
+  background-color: grey;
+  height: 100vh;
+  display: inline-block;
+  border-left: 1px solid dimgray;
+  border-right: 1px solid dimgray;
+  cursor: col-resize;
+}
